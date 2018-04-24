@@ -29,29 +29,8 @@ Table of Content
 		- Run "sudo apt-get install libcurl3" to install the lincurl3.
 		- Run "sudo apt-get install libcurl4-opssl-dev" to install the development API of libcurl4.     
 2. Installation
+  - 
 
-
-
-
-										|-----------|
-										|    LAN	|
-								        |-----------|
-		 ----------------------              |
-		|					   |             |
-	|---|					   |------RJ45---|                                          ------
-	|SDc|			RPi		   |----                                       |-----------|	  |
-	|---|					   |	|-----USB Sound Card-------------------|Microphone |	  |
-		|					   |----	                                   |-----------|	  |
-		 ----------------------				                                            ------
-			|						 |------|
-			|						 |		|
-			|						 |		|
-			|------------------------|  PC	|
-									 |		|
-									 |		|
-									 |------|
-			
-						   
 3. Operation
 	
 4. Manifest(list of files and short description of their roles)
