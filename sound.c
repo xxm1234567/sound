@@ -44,11 +44,14 @@ void displayBar(char filename[]){
 #ifdef COMM	// conditiol compilation
 	sendToServer(rms_80);
 #endif
-}//function
-// function definition of displayWAVheader()
+}
+
 /*********************************************************************************************
  *				Make a displayWAVheader() function
- * Discription: Function of print all of sound information, and tansfer the data to the diagram	 		
+ * Discription: Function of print all of sound information, and tansfer the data to the diagram
+ *		and record the changing of the sound.
+ * Argument   : filename[]	:Offer a space let the file can use in the program.
+ * Return     : none
  *********************************************************************************************/
 void displayWAVheader(char filename[]){
 	WAVHeader myhdr; // an instance of defined struct
@@ -75,7 +78,12 @@ void displayWAVheader(char filename[]){
 	printID(myhdr.subchunk2ID);
 	printf("subchunk 2 size:  %d\n", myhdr.subchunk2Size);
 }
-
+/**************************************************************************************
+ *			Print the ID of the sound file
+ * Discription: Function of print, set a number and use this function to print the arry
+ * Arguement  :	id[]	: Information of the function ID.
+ * Return     : none
+ **************************************************************************************/
 void printID(char id[]){
 	int i;
 	for(i=0; i<4; i++)
