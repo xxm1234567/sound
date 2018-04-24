@@ -35,6 +35,14 @@ Table of Content
 	
 4. Manifest(list of files and short description of their roles)
 5. License
+   No Copyright
+	The person who associated a work with this deed has dedicated the work to thepublic domain by waiving all of his or her rights         to the work worldwide undercopyright law, including all related and neighboring rights,to the extent allowed by law.
+        You can copy, modify, distribute and perform the work, even for commercialpurposes, all without asking permission. See Other             Information below.
+    
+    Other Information:
+      * In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in           the work or in how the work is used, such as publicity or privacy rights.
+      * Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and               disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.
+      * When using or citing the work, you should not imply endorsement by the author or the affirmer.
 6. Contact information
 Xu Xinmeng,
 Department of Information Technology
