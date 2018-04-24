@@ -4,13 +4,13 @@
 #include <stdio.h>
 #include <math.h>
  
-/**************************************************************************************************************
- *					Make a displayBar() function
- * Discription: Function opens the "west.wav" file and read the second part (data) of the file, and the samples
- *		should be S16_LE format, and there are 16000 of them. The function processes every 200 samples 
- * 		and calculate their BMS values and renders this value ads a vertical bar on terminal screen.
- * Arguements : filename[]	:offer the place to save the file.
- * Returns    : none
+/*************************************************************************************************************
+ * Function Name: displayBar
+ * Discription  : Function opens the "west.wav" file and read the second part (data) of the file, and the samples
+ *		  should be S16_LE format, and there are 16000 of them. The function processes every 200 samples 
+ * 		  and calculate their BMS values and renders this value ads a vertical bar on terminal screen.
+ * Arguements   : filename[]	offer the place to save the file.
+ * Returns      : none
  **************************************************************************************************************/
 void displayBar(char filename[]){
 	FILE *fp;
@@ -46,13 +46,13 @@ void displayBar(char filename[]){
 #endif
 }
 
-/*********************************************************************************************
- *				Make a displayWAVheader() function
- * Discription: Function of print all of sound information, and tansfer the data to the diagram
- *		and record the changing of the sound.
- * Argument   : filename[]	:Offer a space let the file can use in the program.
- * Return     : none
- *********************************************************************************************/
+/***************************************************************************************************
+ * Function Name: displayWAVheader
+ * Discription  : Function of print all of sound information, and tansfer the data to the diagram
+ *		  and record the changing of the sound.
+ * Arguement    : filename[]	Offer a space let the file can use in the program.
+ * Return       : none
+ ****************************************************************************************************/
 void displayWAVheader(char filename[]){
 	WAVHeader myhdr; // an instance of defined struct
 	FILE *fp;
@@ -78,12 +78,12 @@ void displayWAVheader(char filename[]){
 	printID(myhdr.subchunk2ID);
 	printf("subchunk 2 size:  %d\n", myhdr.subchunk2Size);
 }
-/**************************************************************************************
- *			Print the ID of the sound file
- * Discription: Function of print, set a number and use this function to print the arry
- * Arguement  :	id[]	: Information of the function ID.
- * Return     : none
- **************************************************************************************/
+/*********************************************************************************************
+ * Function Name: printID
+ * Discription  : Function of print, set a number and use this function to print the arry
+ * Arguement    :	id[]	Information of the function ID.
+ * Return       : none
+ *********************************************************************************************/
 void printID(char id[]){
 	int i;
 	for(i=0; i<4; i++)
