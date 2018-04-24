@@ -4,6 +4,13 @@
 #include "sound.h"
 #include "comm.h"
 
+/*********************************************************************************************
+ * Function Name: main
+ * Discription  : Open the "test.wave" file and display the nessary information and calculate 
+ *	 	  fast dBs.
+ * Arguement    : none
+ * Return       : none
+ *********************************************************************************************/
 int main(void){
 	int ret;
 	while(1){
