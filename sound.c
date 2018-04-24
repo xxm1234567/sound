@@ -3,10 +3,15 @@
 #include "screen.h"
 #include <stdio.h>
 #include <math.h>
-// function definition of displayBar()
-// function opens the "twst.wav" file and read the second part (data) of the file, and the samples should
-// be S16_LE format, and there are 16000 of them. The function processes every 200 samples and calculate their
-// BMS values and renders this value as a vertical bar on terminal screen 
+ 
+/**************************************************************************************************************
+ *					Make a displayBar() function
+ * Discription: Function opens the "west.wav" file and read the second part (data) of the file, and the samples
+ *		should be S16_LE format, and there are 16000 of them. The function processes every 200 samples 
+ * 		and calculate their BMS values and renders this value ads a vertical bar on terminal screen.
+ * Arguements : filename[]	:offer the place to save the file.
+ * Returns    : none
+ **************************************************************************************************************/
 void displayBar(char filename[]){
 	FILE *fp;
 	short int samples[SAMPLERATE];
@@ -41,6 +46,10 @@ void displayBar(char filename[]){
 #endif
 }//function
 // function definition of displayWAVheader()
+/*********************************************************************************************
+ *				Make a displayWAVheader() function
+ * Discription: Function of print all of sound information, and tansfer the data to the diagram	 		
+ *********************************************************************************************/
 void displayWAVheader(char filename[]){
 	WAVHeader myhdr; // an instance of defined struct
 	FILE *fp;
