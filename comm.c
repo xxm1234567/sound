@@ -3,10 +3,14 @@
 #include <stdio.h>	//sprintf()
 #include <curl/curl.h>//libcurl
 
-//This function takes in RMS value of 1 second, each calculated by 16000/80-200
-//samples, but the function will re-calculate 8-pieces of RMS values, each
-//corresponding to 2000 samples of 125ms of sound
-
+/**********************************************************************************************
+ *		 		 Send the sound information to server
+ * Discription: This function takes in RMS value of 1 second, each calcilated by 16000/80-200
+ *		samples, but the function will re-calculate 8-pieces of RMS values, each 
+ *		crressponding to 2000 samples of 125ms of sound.
+ * Arguement  : r80[]	to calculate 8-pieces of fast values.
+ * Return     : none
+ **********************************************************************************************/
 void sendToServer(double r80[]){
 	double r8[8], sum;
 	int i,j;	//loop counters
