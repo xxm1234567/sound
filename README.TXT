@@ -29,11 +29,22 @@ Table of Content
 		- Run "sudo apt-get install libcurl3" to install the lincurl3.
 		- Run "sudo apt-get install libcurl4-opssl-dev" to install the development API of libcurl4.     
 2. Installation
-  - 
+  - Insert the SD card into RPi and link it to local area network.
+  - Open 
 
 3. Operation
 	
 4. Manifest(list of files and short description of their roles)
+   main:
+   	Open the "test.wav" file and display nessary information and calculate the fast dBs.
+   sound:
+   	Open the file and read the file, transfer the data to the diagram and print all of the sound information record the changing 
+	of the sound´.
+   screen:
+   	Clear the screen and print the diagram to the screen, also show the different level of the sound.
+   comm:
+   	Record the sound information and send the sound information to server.
+   	
 5. License
    No Copyright
 	The person who associated a work with this deed has dedicated the work to thepublic domain by waiving all of his or her rights         to the work worldwide undercopyright law, including all related and neighboring rights,to the extent allowed by law.
