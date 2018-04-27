@@ -29,11 +29,18 @@ Table of Content
 		- Run "sudo apt-get install libcurl3" to install the lincurl3.
 		- Run "sudo apt-get install libcurl4-opssl-dev" to install the development API of libcurl4.     
 2. Installation
-  - Insert the SD card into RPi and link it to local area network.
-  - Open 
+  -Connect an SD card reader with the SD card inside.
+  -Open Etcher and select from your hard drive the Raspberry Pi .img or .zip file you wish to write to the SD card.
+  -Select the SD card you wish to write your image to.
+  -Review your selections and click 'Flash!' to begin writing data to the SD card.
+  -Link a microphone with sound card to RPi.
+  -Run the program.
 
 3. Operation
-	
+	-Enable the module and use them within PUTTY (Linux environment).
+	-Read the code. Much effort has gone into making the example code readable,not only in terms of the code itself, but also the            extensive inline comments and documentation blocks.
+	-Running the program that you can make some voice and you will see the waveform.
+ 
 4. Manifest(list of files and short description of their roles)
    main:
    	Open the "test.wav" file and display nessary information and calculate the fast dBs.
